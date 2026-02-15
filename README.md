@@ -1,5 +1,5 @@
 # MUSE - SEO & Content SLM
-Le pilier "Accessible" de CEDRA. Responsable de la clarté et du contenu SEO.
+Le pilier "Accessible". Responsable de la clarté et du contenu SEO.
 
 ## Rôle
 - Rédaction de fiches produits SEO.
