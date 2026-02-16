@@ -2,9 +2,12 @@
 # Licensed under the Apache License, Version 2.0
 import sentencepiece as spm
 
+from MUSE.config import settings
+
 class MuseSEO:
-    def __init__(self, tokenizer_path="models/ecommerce_tokenizer.model"):
-        self.sp = spm.SentencePieceProcessor(model_file=tokenizer_path)
+    def __init__(self, tokenizer_path=None):
+        t_path = tokenizer_path or settings.TOKENIZER_PATH
+        self.sp = spm.SentencePieceProcessor(model_file=t_path)
 
     def write_sales_copy(self, product_sku, raw_data, sources):
         """Transforme les données brutes en texte SEO qualitatif"""
